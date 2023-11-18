@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regis.css">
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+    <form action="https://formspree.io/f/xjvqdedv" 
+    method="post"
+    enctype="multipart/form-data">
+        <label>Name</label>
+        <input type="text" name="name" required="">
+        <label>Email</label>
+        <input type="email" email="email" required="">
+        <label>Phone Number</label>
+        <input type="tel" phoneNumber="phoneNumber" required="">
+        <label>gender</label>
+        <select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <label>Zipcode</label>
+        <input type="text" zipcode="zipcode" required="">
+        <label>About</label>
+        <textarea name="about"></textarea><br><br>
+        <label for="know language"> select know language</label>
+        <input type="checkbox" id="subject1" name=" subject1" value="Tamil">
+          Tamil 
+        <input type="checkbox" id=" subject2" name=" subject2" value="Telugu">
+        Telugu
+        <input type="checkbox" id=" subject3" name=" subject3" value=" English ">
+        Telugu<br><br>
+        <label for="favcolor">Select your favoritecolor:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <label for="DOB">DOB</label>
+        <input type="date" id="DOB" name="DOB">
+        <label for="birthdaytime">DOB(date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <label for="myfile">Select a file:</label>
+        <center><input type="file" id="myfile" name="myfile"></center>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit"><br>
+        <input type="image" src="Emoji_Icon_-_Smiling_large.JPG" alt="Submit" width="20" height="20">
+            <label for="bdaymonth">DOB (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <label for="quantity">select(between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+           <p>Choose your favorite Web language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            HTML<input type="radio" id="css" name="fav_language" value="CSS">
+            CSS<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            JavaScript
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" ><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch"><br>
+    <input type="submit" value="Submit"><br>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage">
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week"> 
+    <label>Submit</label>
+    <input type="submit" value="register">
+    </form>
+</body>
+</html>
